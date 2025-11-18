@@ -1,7 +1,7 @@
 package com.example.ticketingcatalog.controller;
 
 import com.example.ticketingcatalog.dto.VenueDTO;
-import com.example.ticketingcatalog.service.impl.VenueServiceImpl;
+import com.example.ticketingcatalog.service.interfaces.IVenueService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,9 +12,9 @@ import java.util.List;
 @RequestMapping("/venues") // Base path para todos los endpoints de venues
 public class VenueController {
 
-    private final VenueServiceImpl venueService; // Inyección del servicio de venues
+    private final IVenueService venueService; // Inyección del servicio de venues
 
-    public VenueController(VenueServiceImpl venueService) {
+    public VenueController(IVenueService venueService) {
         this.venueService = venueService;
     }
 

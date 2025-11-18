@@ -1,7 +1,7 @@
 package com.example.ticketingcatalog.controller;
 
 import com.example.ticketingcatalog.dto.EventDTO;
-import com.example.ticketingcatalog.service.impl.EventServiceImpl;
+import com.example.ticketingcatalog.service.interfaces.IEventService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,9 +12,9 @@ import java.util.List;
 @RequestMapping("/events") // Base path para todos los endpoints de eventoss
 public class EventController {
 
-    private final EventServiceImpl eventService;
+    private final IEventService eventService;
 
-    public EventController(EventServiceImpl eventService) {
+    public EventController(IEventService eventService) {
         this.eventService = eventService;
     }
 

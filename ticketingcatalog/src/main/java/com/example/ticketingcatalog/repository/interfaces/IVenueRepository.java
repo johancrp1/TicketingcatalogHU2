@@ -1,4 +1,4 @@
 package com.example.ticketingcatalog.repository.interfaces;
 
-public class IVenueRepository {
+public interface IVenueRepository {
 }

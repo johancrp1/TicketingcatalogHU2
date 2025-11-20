@@ -85,6 +85,7 @@
         </dependency>
 
         <!-- Base de datos H2 para desarrollo -->
+        <!-- http://localhost:8080/h2-console -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
